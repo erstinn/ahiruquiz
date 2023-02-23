@@ -6,8 +6,8 @@ const lightTheme = {
         bg: "#FAF4ED",
         editButton: "#4F4541",
         blue: "#276882",
-        lightBlue: "#9FA8A6",
-        yellow: "#E99C33",
+        lightBlue: "#a4e3e1",
+        yellow: "#EA9D34",
         purple: "#8F79A8",
         lightPink: "#D6817D",
         pink: "#C68086",
@@ -27,6 +27,13 @@ const lightTheme = {
         light: 100,
         normal: 200,
         bold: 300
+    },
+    screenSizes:{
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        xxl: '1920px',
     }
 };
 export default function Theme ({ children }) {

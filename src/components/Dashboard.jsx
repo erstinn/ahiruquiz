@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "./Header.jsx";
+import Navbar from "./Navbar.jsx";
 import {EditButton} from "./styles/Buttons.styled.js";
 import {SelectionCard} from "./styles/Cards.styled.js";
 import {StyledTag} from "./styles/Fragments.styled.js";
@@ -16,18 +16,27 @@ function Dashboard(){
     return(
         <>
             {/*sdasdkm*/}
-            {/*<Header />*/}
+            <Navbar />
             <div>
-                知ってるひらがな
                 <Container>
-                    <SelectionCard> qqq
-                    {/*    <EditButton><span>EDIT</span></EditButton>*/}
+                    <SelectionCard> 知ってるひらがな
+                        <EditButton name=""><span> EDIT </span></EditButton>
+                        <EditButton name=""><span> DELETE </span></EditButton>
                     </SelectionCard>
-                    <SelectionCard> qqq
-                    {/*    <EditButton><span>EDIT</span></EditButton>*/}
+                    <SelectionCard> 場所
+                        <EditButton><span> 編集 </span></EditButton>
                     </SelectionCard>
-                    <SelectionCard> qqq
-                    {/*    <EditButton><span>EDIT</span></EditButton>*/}
+                    <SelectionCard>  漢字
+                        {/*<EditButton><span>EDIT</span></EditButton>*/}
+                    </SelectionCard>
+                    <SelectionCard>  漢字
+                        {/*<EditButton><span>EDIT</span></EditButton>*/}
+                    </SelectionCard>
+                    <SelectionCard>  漢字
+                        {/*<EditButton><span>EDIT</span></EditButton>*/}
+                    </SelectionCard>
+                    <SelectionCard>  漢字
+                        {/*<EditButton><span>EDIT</span></EditButton>*/}
                     </SelectionCard>
                 {/*    <SelectionCard>*/}
                 {/*        知ってるひらがな*/}

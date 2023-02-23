@@ -1,46 +1,40 @@
 import styled from "styled-components";
 
+//[Card shadows] https://alvarotrigo.com/shadow-gradients/
+
 export const Container = styled.div`
   display: grid;
-  background-color: black;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px 10px;
+  grid-template-columns: repeat(4, 0.1rem);
+  grid-gap: 1rem 1rem;
+  margin-top: 5rem;
+  //margin-right: -0rem;
   align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 10px 6px 6px 6px;
-  border: black 6px;
-
-  .box:before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(-157deg, #ffd500 -100%, #00296b -100% );
-    transform: translate3d(19px, 34px, 0) scale(1.02);
-    filter: blur(43px);
-    opacity: var(0.51);
-    transition: opacity 0.3s;
-    border-radius: inherit;
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  
+  @media (min-width: ${(props)=> props.theme.screenSizes.sm}){
+    grid-template-columns: repeat(3, 18rem);
+    grid-gap: 0.9rem 0.1rem;
+  }
+  
+  @media (min-width: ${(props)=> props.theme.screenSizes.md}){
+    grid-gap: 1rem 1rem;
   }
 
-  /* 
-  * Prevents issues when the parent creates a 
-  * stacking context. (For example, using the transform
-  * property )
-  */
-  .box::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    border-radius: inherit;
+  @media (min-width: ${(props)=> props.theme.screenSizes.lg}){
+    grid-template-columns: repeat(4, 18rem);
+    grid-gap: 1rem 1rem;
   }
 
-`
+  @media (min-width: ${(props)=> props.theme.screenSizes.xl}){
+    margin-top: 3rem;
+    grid-gap: 2rem 5rem;
+  }
+  @media (min-width: ${(props)=> props.theme.screenSizes.xxl}){
+    margin-top: 3rem;
+    grid-gap: 2rem 20rem;
+  }
+
+
+`;
