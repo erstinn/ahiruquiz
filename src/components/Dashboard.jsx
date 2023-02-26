@@ -15,7 +15,6 @@ import {Container} from "./styles/Container.styled.js";
 function Dashboard(){
     return(
         <>
-            {/*sdasdkm*/}
             <Navbar />
             <div>
                 <Container>
