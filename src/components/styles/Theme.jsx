@@ -3,15 +3,16 @@ import {ThemeProvider} from "styled-components";
 
 const lightTheme = {
     colors: {
-        bg: "#FAF4ED",
-        editButton: "#4F4541",
-        blue: "#276882",
-        lightBlue: "#a4e3e1",
-        yellow: "#EA9D34",
+        bg: "#D8D3CF",
+        black: "#4F4541",
+        blue: "#66B2F1",
+        lightBlue: "#CAD2C7",
+        yellow: "#fbd988",
         purple: "#8F79A8",
-        lightPink: "#D6817D",
-        pink: "#C68086",
-        turquoise: "#56949F",
+        lightPink: "#F2DDDB",
+        pink: "#EEA9A1",
+        turquoise: "#C5E1DD",
+        testColor : "#8F79A8",
         easyTagColor: "", //turq
         mediumTagColor: "", //yel
         hardTagColor: "", //pink

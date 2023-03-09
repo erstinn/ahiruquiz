@@ -4,11 +4,10 @@ import {ReactComponent as BurgerUnclickedIcon} from "../assets/burger.svg";
 import {ReactComponent as BurgerClickedIcon} from "../assets/openburger.svg";
 
 //todo
-// [] will contain spotify
-// [] login/logout (person icon)
-// [] burger menu
-// [] current window title name
-
+// [] will contain spotify??
+// [] login/logout (person icon/stuff) inside burger
+// [] burger LIST
+// [] hook for hover?
 
 const Navbar = () => {
 
@@ -26,6 +25,12 @@ const Navbar = () => {
         }
         setMenuClicked(!isMenuClicked)
     }
+
+    // const hoverEffect = () =>{
+    //     if (cardHovered){
+    //         setCardHovered()
+    //     }
+    // }
 
     return (
         <StyledNavbar>

@@ -41,7 +41,7 @@ export const EditButton = styled.button`
     content: "";
     right: 0;
     bottom: 0;
-    background: ${(props)=>props.theme.colors.blue};;
+    background: ${(props)=>props.theme.colors.lightBlue};
     //transition: all 0.1s ease-in-out;
     transition: all 0.1s ease;
   }
@@ -61,13 +61,13 @@ export const EditButton = styled.button`
   &:hover:before {
     height: 100%;
     top: 0;
-    background: ${(props)=>props.theme.colors.blue};;
+    background: ${(props)=>props.theme.colors.lightBlue};
   }
 
   &:hover:after {
     width: 100%;
     left: 0;
-    background: ${(props)=>props.theme.colors.blue};;
+    background: ${(props)=>props.theme.colors.lightBlue};
   }
 
   &:hover {

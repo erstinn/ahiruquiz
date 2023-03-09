@@ -3,7 +3,6 @@ import styled from "styled-components";
 //for small fragments around the website e.g. tags, etc
 
 
-export const StyledTag = styled.div`
+export const StyledHeader = styled.div`
   color: red;
-`
-
+`;

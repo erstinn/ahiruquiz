@@ -20,7 +20,7 @@ function Dashboard(){
                 <Container>
                     <SelectionCard> 知ってるひらがな
                         <EditButton name=""><span> EDIT </span></EditButton>
-                        <EditButton name=""><span> DELETE </span></EditButton>
+                        {/*<EditButton name=""><span> DELETE </span></EditButton>*/}
                     </SelectionCard>
                     <SelectionCard> 場所
                         <EditButton><span> 編集 </span></EditButton>
