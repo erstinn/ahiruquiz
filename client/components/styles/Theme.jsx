@@ -3,7 +3,7 @@ import {ThemeProvider} from "styled-components";
 
 const lightTheme = {
     colors: {
-        bg: "#D8D3CF",
+        bg: "#D8D3CFc",
         black: "#4F4541",
         blue: "#66B2F1",
         lightBlue: "#CAD2C7",

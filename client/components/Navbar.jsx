@@ -2,6 +2,12 @@ import React, {useState} from 'react';
 import {StyledNavbar} from "./styles/Navbar.styled.js";
 import {ReactComponent as BurgerUnclickedIcon} from "../assets/burger.svg";
 import {ReactComponent as BurgerClickedIcon} from "../assets/openburger.svg";
+// import {
+//     createBrowserRouter,
+//     RouterProvider,
+//     Route,
+//     Link,
+// } from "react-router-dom";
 
 //todo
 // [] will contain spotify??
@@ -34,17 +40,21 @@ const Navbar = () => {
 
     return (
         <StyledNavbar>
-                <div className="burger-menu" onClick={updateMenu}>
-                    {!isMenuClicked ?(
-                        <BurgerUnclickedIcon />
-                    ) : (
-                        <BurgerClickedIcon />
-                    )}
-                    <div className={burger_class}></div>
-                    <div className={burger_class}></div>
-                    <div className={burger_class}></div>
-                </div>
-                <div className={menu_class}></div>
+            <div className="burger-menu" onClick={updateMenu}>
+                {!isMenuClicked ?(
+                    <BurgerUnclickedIcon />
+                ) : (
+                    <BurgerClickedIcon />
+                )}
+                {/*<Link to='/'> <li> ランダム小テスト </li></Link>*/}
+                {/*<Link to='/'> <li> 習熟ランキング </li></Link>*/}
+                {/*<Link to='/'> <li> 設定 </li></Link>*/}
+                {/*<Link to='/'> <li> ログアウト </li></Link>*/}
+                    {/*<div className={burger_class}>a</div>*/}
+                {/*<div className={burger_class}></div>*/}
+                {/*<div className={burger_class}></div>*/}
+            </div>
+            <div className={menu_class}></div>
             <h1>🐥 ダッシュボード   🐥</h1>
         </StyledNavbar>
     );

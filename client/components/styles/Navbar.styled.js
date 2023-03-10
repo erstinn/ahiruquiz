@@ -37,15 +37,15 @@ export const StyledNavbar = styled.nav`
     z-index: 2;
     width: 3rem;
     height: 7rem;
-    background-color: ${(props)=> props.theme.colors.yellow};
+    background-color: ${props=> props.theme.colors.yellow};
   }
   & .menu {
     z-index: 1;
-    width: 25%;
+    width: 20%;
     height: 80vh;
     margin-top: 60px;
     position: fixed;
-    // background-color: ${(props)=> props.theme.colors.yellow};
+    // background-color: ${props=> props.theme.colors.yellow};
     background-color: #D1D6C8;
     margin-left: -1rem;
   }
@@ -66,6 +66,9 @@ export const StyledNavbar = styled.nav`
     }
   }
 
+  a{
+    color: ${props => props.theme.colors.black};
+  }
   
 `;
 
