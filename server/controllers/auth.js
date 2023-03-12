@@ -52,3 +52,5 @@ export const login = async (req, res) => {
         res.status(500).json({e: e.message}); //send error message returned by mongodb
     }
 }
+
+export default router;
