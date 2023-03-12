@@ -11,3 +11,6 @@
 - **jsonwebtoken** auth
 - **mongoose**
 - **express**
+
+ **[この人](https://www.youtube.com/watch?v=K8YELRmUb5o)からの新しい学んだこと** 
+- Token and its implementation*でもまだ足りないだと思うのでこのコースのあともっとトークンのこと学ぶ*

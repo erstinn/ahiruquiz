@@ -10,6 +10,11 @@ import path from "path";
 import { fileURLToPath } from "url"
 import {register } from "./controllers/auth.js"
 
+// === INIT ROUTES ===
+import authRoutes from "./routes/auth.js";
+import {verifyToken} from "./middleware/auth.js";
+
+
 //  ===CONFIGS===
 // only when you use `type modules`
 const __filename =  fileURLToPath(import.meta.url); //to be able to use dir names
@@ -37,6 +42,11 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+// app.post('/auth/register', upload.single('picture'), verifyToken, register); todo uncomment when username and stuff are implemented
+app.post('/auth/register', upload.single('picture'),  register);
+
+// === MOUNT ROUTES ===
+app.use('/auth', authRoutes);
 
 
 // === MONGOOSE SETUP ===
