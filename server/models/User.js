@@ -33,5 +33,25 @@ const UserSchema = new mongoose.Schema(
     {timestamps: true} // to enforce timestamps: dateCreated
 );
 
+const SetSchema = new mongoose.Schema(
+    {
+        username: {
+            type: 'String',
+            required: true,
+            min: 6,
+            max: 50,
+            unique: true,
+        },
+        name:{
+            type: 'String',
+            required: true,
+            max: 60,
+        },
+        contents:{
+            type:
+        }
+    },
+)
+
 const User = mongoose.model('User', UserSchema);
 export default User;

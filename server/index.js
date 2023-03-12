@@ -11,8 +11,9 @@ import { fileURLToPath } from "url"
 import {register } from "./controllers/auth.js"
 
 // === INIT ROUTES ===
-import authRoutes from "./routes/auth.js";
-import {verifyToken} from "./middleware/auth.js";
+import authRoutes from "./routes/auth";
+import {verifyToken} from "./middleware/auth";
+import userRoutes from "./routes/users";
 
 
 //  ===CONFIGS===
@@ -47,7 +48,7 @@ app.post('/auth/register', upload.single('picture'),  register);
 
 // === MOUNT ROUTES ===
 app.use('/auth', authRoutes);
-
+app.use('/users', userRoutes);
 
 // === MONGOOSE SETUP ===
 const PORT = process.env.PORT || 5172;
