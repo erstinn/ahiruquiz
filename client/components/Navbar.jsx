@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyledNavbar} from "./styles/Navbar.styled.js";
+import {StyledNavbar} from "../styles/Navbar.styled.js";
 import {ReactComponent as BurgerUnclickedIcon} from "../assets/burger.svg";
 import {ReactComponent as BurgerClickedIcon} from "../assets/openburger.svg";
 // import {

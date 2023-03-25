@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from "../components/Navbar.jsx";
-import {EditButton} from "../components/styles/Buttons.styled.js";
-import {SelectionCard} from "../components/styles/Cards.styled.js";
-import {Container} from "../components/styles/Container.styled.js";
+import {EditButton} from "../styles/Buttons.styled.js";
+import {SelectionCard} from "../styles/Cards.styled.js";
+import {Container} from "../styles/Container.styled.js";
 
 // TODO
 //  [] may not put sort here maybe idc abt it

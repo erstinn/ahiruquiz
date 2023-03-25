@@ -12,6 +12,7 @@
 - **@emotion/react** material ui
 - **@emotion/styled** material ui
 
+_the boilerplate dobe insane redux_
 
 <h3>Purpose certain files</h3>
 - _jsconfig.json_ when you import diff. files into other files, you can start from `src`
