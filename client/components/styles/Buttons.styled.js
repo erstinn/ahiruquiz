@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Theme from './Theme.jsx'
 
 // TODO
 //  [] INHERITANCE OF STYLED COMPONENTS
