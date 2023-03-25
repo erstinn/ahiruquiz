@@ -11,7 +11,9 @@ import {Container} from "../components/styles/Container.styled.js";
 //  []
 //  []
 
-function Dashboard(){
+
+
+const Dashboard = () => {
     return(
         <>
             <Navbar />
@@ -48,3 +50,8 @@ function Dashboard(){
 }
 
 export default Dashboard;
+
+// ===ahiru comments===
+// only use dynamic routing for dashboard if need user-specific data, personalized dashboards, and security (access control)
+    // privacy concerns: sharing dashboard links = showing user's id in the url -> need enc./security measure for that
+    // for simplicity; i used dynamic -> enc if wna :)
