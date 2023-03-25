@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import React from "react";
-import {ReactComponent as BurgerClosedIcon} from '../../assets/burger.svg'
 
 export const StyledNavbar = styled.nav`
   display: flex;
