@@ -1,9 +1,9 @@
 import React from "react";
-import Dashboard from "scenes/Dashboard";
-import HamburgerMenu from "components/HamburgerMenu";
-// import Navbar from "components/Navbar.jsx";
-import QuizArea from "scenes/QuizArea";
-import Theme from "components/styles/Theme";
+import Dashboard from "./scenes/Dashboard";
+import HamburgerMenu from "./components/HamburgerMenu";
+// import Navbar from "./components/Navbar.jsx";
+import QuizArea from "./scenes/QuizArea";
+import Theme from "./components/styles/Theme";
 
 import { BrowserRouter, Navigate, Routes, Route} from "react-router-dom";
 
