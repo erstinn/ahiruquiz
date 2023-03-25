@@ -15,7 +15,6 @@
 
 <h3>Purpose certain files</h3>
 - _jsconfig.json_ when you import diff. files into other files, you can start from `src`
-  - e.g. no need to `../client/src/ahiru/...` or instead of `./ahiru`
-  - can just `/ahiru`
-- **_state folder_** where our redux and toolkit info, _keep your data and component separate
-- _
+  - e.g. no need to `../client/src/ahiru/...`
+  - can just `./ahiru`
+- **_state folder_** where our redux and toolkit info, _keep your data and component separate_
