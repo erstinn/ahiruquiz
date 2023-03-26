@@ -1,6 +1,5 @@
 <h3>Purpose of installed npm packages</h3>
 
-
 - **redux** most popular state management tool
 
 - **@reduxjs/toolkit** easy way to use redux (wrapper)   
@@ -27,7 +26,8 @@
 
 _the boilerplate dobe insane redux_  
 
-<h3>Purpose certain files</h3>  
+<h3>Purpose certain files</h3>
+
 - _jsconfig.json_ when you import diff. files into other files, you can start from `src`  
 
   - e.g. no need to `../client/src/ahiru/...` or instead of `./ahiru`  

@@ -19,7 +19,7 @@ const Dashboard = () => {
             <Navbar />
             <div>
                 <Container>
-                    <SelectionCard> 知ってるひらがな
+                    <SelectionCard> 知ってるひらがなmeow
                         <EditButton name=""><span> EDIT </span></EditButton>
                         {/*<EditButton name=""><span> DELETE </span></EditButton>*/}
                     </SelectionCard>

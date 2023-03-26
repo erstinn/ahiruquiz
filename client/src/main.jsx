@@ -17,7 +17,7 @@ import {
 } from "redux-persist";
 import storage from 'redux-persist/lib/storage'
 import { PersistGate } from 'redux-persist/integration/react';
-// purpose of all these imports for state = all the info of your state (the one in ./state/index.js) would persist (look notes.md)
+// purpose of all these imports for state = all the info of your state (the one in ./state/index.js) would persist (look README.md)
 // and the only way they can clear it is to clear their cache
 // === alternative is SessionStorage but once tab closed = info byebye ===
 //todo =============== refer to redux toolkit/persist to know how to set it up, what matters is you know how =============================
