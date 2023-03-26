@@ -1,6 +1,6 @@
 import React from "react";
 import Dashboard from "./scenes/Dashboard.jsx";
-import HamburgerMenu from "./components/HamburgerMenu.jsx";
+import HamburgerMenu from "./scenes/HamburgerMenu.jsx";
 // import Navbar from "./components/Navbar.jsx";
 import QuizArea from "./scenes/QuizArea.jsx";
 import Theme from "./styles/Theme.jsx";

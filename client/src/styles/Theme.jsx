@@ -49,7 +49,7 @@ export default function Theme ({ children }) {
 export const themeSettings = (mode) => {
     return{
         //setting up default colors for UI themes:
-        pallete: {
+        palette: {
             mode: mode,
             ...(mode === 'dark' ? { //esp for dark/light themes
                 primary:{
