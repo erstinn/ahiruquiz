@@ -11,9 +11,9 @@ import { fileURLToPath } from "url"
 import {register } from "./controllers/auth.js"
 
 // === INIT ROUTES ===
-import authRoutes from "./routes/auth";
-import {verifyToken} from "./middleware/auth";
-import userRoutes from "./routes/users";
+import authRoutes from "./routes/auth.js";
+import {verifyToken} from "./middleware/auth.js";
+import userRoutes from "./routes/users.js";
 
 
 //  ===CONFIGS===

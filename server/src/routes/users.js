@@ -5,7 +5,7 @@ import {
     getUserSets,
     getDeletedSets, //may not be needed, but good for restoring sets
     addDeleteSets,
-} from '../controllers/users';
+} from '../controllers/users.js';
 import {verifyToken} from "../middleware/auth.js";
 const router = express.Router();
 

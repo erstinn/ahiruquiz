@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import authReducer from './state'
+import authReducer from './state/index.js'
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 //only import these if you use redux persist only
