@@ -8,8 +8,11 @@
 - **yup** for validation  
 - **react-router-dom@6** handling diff. routes/pages  
 - **@mui/material** material ui  
+
   - **@mui/icons-material**   
+
 - **@emotion/react** material ui  
+
 - **@emotion/styled** material ui  
 
 _the boilerplate dobe insane redux_  
@@ -20,7 +23,7 @@ _the boilerplate dobe insane redux_
   - can just `/ahiru`  
 - **_state folder_** where our redux and toolkit info, _keep your data and component separate  
 -   
-<h3>ahiru Notes</h3>    
+<h3>ahiru Notes</h3>  
 - obfuscated theming process since I wanted to apply both redux +mui stuff (states)  
   - but still applied styled components theming e.g. [on this file](/client/src/styles/Buttons.styled.js)
   - 
