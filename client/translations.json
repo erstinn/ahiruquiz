@@ -1,0 +1,22 @@
+{
+  "en":{
+    "dashboard": "Dashboard",
+    "lightMode" : "Light Mode",
+    "darkMode" : "Dark Mode",
+    "langLabel" : "Language",
+    "language1" : "English",
+    "language2" : "Japanese",
+    "points" : "Points",
+    "edit" : "Edit"
+  },
+  "jp":{
+    "dashboard": "ダッシュボード",
+    "lightMode" : "ライトモード",
+    "darkMode" : "ダークモード",
+    "langLabel" : "言語",
+    "language1" : "日本語",
+    "language2" : "英語",
+    "points" : "点",
+    "edit" : "編集"
+  }
+}

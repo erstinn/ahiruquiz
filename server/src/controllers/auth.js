@@ -32,8 +32,7 @@ export const login = async (req, res) => {
     /** === Authentication ===
      * in a production environment is not as simple as this either the company itself
      * has their own library for it or a team is assigned to focus on authentication implementation
-     *
-     */
+    */
     try {
         const {username, email, password} = req.body
         const user = await User.findOne({ email: email });
@@ -52,5 +51,3 @@ export const login = async (req, res) => {
         res.status(500).json({e: e.message}); //send error message returned by mongodb
     }
 }
-
-export default router;

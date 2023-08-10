@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -20,19 +19,23 @@ import userRoutes from "./routes/users.js";
 // only when you use `type modules`
 const __filename =  fileURLToPath(import.meta.url); //to be able to use dir names
 const __dirname = path.dirname(__filename);
-dotenv.config();
+dotenv.config(); //to use dotenv files
+
 const app = express();
-app.use(express.json());
+// app.use(express.json());
 app.use(helmet());
-app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin"}));
-app.use(morgan("common"));
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit:"30mb", extended: true }));
-app.use(cors());
+app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin"})); //said policy allow cross origin; sets CORPS policy
+app.use(morgan("common")); //to use common log format
+app.use(express.json({ limit: "30mb", extended: true })); //30mb = max JSON payload; extended allow complex array/objs
+app.use(express.urlencoded({ limit:"30mb", extended: true })); //sets max of URL-encoded payload
+app.use(cors()); //allow reqs from any origin
 // todo after the course, change the config below to store it somewhere e.g. in the cloud (mongoatlas)
 app.use("/assets", express.static(path.join(__dirname, 'public/assets'))); //sets dir where we keep our assets; e.g. images we will store
+//^ usually should be setup in a real storage irl, e.g. cloud
+
 
 // === FILE STORAGE ===
+//todo change later to jus go to mongodb
 const storage = multer.diskStorage({
     destination: function (req, file, cb){
         cb(null, 'public/assets')

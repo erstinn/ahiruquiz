@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "jsconfig"
+    "baseUrl": "src"
   },
-  "include": [
-    "jsconfig"
-  ]
+  "include": ["src"]
 }

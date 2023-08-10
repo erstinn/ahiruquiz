@@ -13,9 +13,9 @@ export const EditButton = styled.button`
   margin-left: 1rem;
   margin-top: 1rem;
   text-transform: uppercase;
-  padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+  padding: 0.6rem;
   cursor: pointer;
-  letter-spacing: 2px;
+  //letter-spacing: 2px;
   border: solid #777 1px;
   opacity: 0.9;
   color: #777;
@@ -40,7 +40,7 @@ export const EditButton = styled.button`
     content: "";
     right: 0;
     bottom: 0;
-    background: ${(props)=>props.theme.colors.lightBlue};
+    background: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
     //transition: all 0.1s ease-in-out;
     transition: all 0.1s ease;
   }
@@ -60,13 +60,13 @@ export const EditButton = styled.button`
   &:hover:before {
     height: 100%;
     top: 0;
-    background: ${(props)=>props.theme.colors.lightBlue};
+    background: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   &:hover:after {
     width: 100%;
     left: 0;
-    background: ${(props)=>props.theme.colors.lightBlue};
+    background: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   &:hover {
@@ -75,7 +75,7 @@ export const EditButton = styled.button`
   }
 
   & span:hover {
-    color: ${(props)=>props.theme.colors.yellow};
+    color: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   & span:before, & span:after {
@@ -102,25 +102,25 @@ export const EditButton = styled.button`
   & span:hover:before {
     height: 2.25rem;
     top: 0;
-    background: ${(props)=>props.theme.colors.yellow};
+    background: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   & span:hover:after {
     width: 100%;
     left: 0;
-    background: ${(props)=>props.theme.colors.yellow};
+    background: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   &:active {
     overflow: unset;
     color: white;
-    background-color: ${(props)=>props.theme.colors.yellow};
-    border-color: ${(props)=>props.theme.colors.yellow};
+    background-color: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
+    border-color: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   &:active:before, &:active:after {
     color: white;
-    background-color: ${(props)=>props.theme.colors.yellow};
+    background-color: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   & span:active {
@@ -129,30 +129,13 @@ export const EditButton = styled.button`
 
   //when clicked
   & span:active:before, & span:active:after {
-    background-color: ${(props)=>props.theme.colors.yellow};
+    background-color: ${(props) => props.light ? props.theme.light.card : props.theme.dark.card};
   }
 
   &:focus {
     outline: none
   }
 
-
-  @media (min-width: ${(props)=> props.theme.screenSizes.xl}){
-    & span:hover:before {
-      height: 2.5rem;
-      top: 0;
-      background: ${(props)=>props.theme.colors.yellow};
-    }
-    font-size: ${(props)=> props.theme.fontSizes.s};
-  }
-  @media (min-width: ${(props)=> props.theme.screenSizes.xxl}){
-    & span:hover:before {
-      height: 3.3rem;
-      top: 0;
-      background: ${(props)=>props.theme.colors.yellow};
-    }
-    font-size: ${(props)=> props.theme.fontSizes.m};
-  }
 
 `;
 

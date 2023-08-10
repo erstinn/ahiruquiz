@@ -25,10 +25,6 @@ const UserSchema = new mongoose.Schema(
         studyStreak:{
             type: 'Date',
         },
-        picPath:{
-            type: 'String',
-            default: '',
-        },
     },
     {timestamps: true} // to enforce timestamps: dateCreated
 );
@@ -47,9 +43,13 @@ const SetSchema = new mongoose.Schema(
             required: true,
             max: 60,
         },
-        contents:{
-            type:
-        }
+        picPath:{
+            type: 'String',
+            default: '',
+        },
+        // contents:{
+        //     type:
+        // }
     },
 )
 

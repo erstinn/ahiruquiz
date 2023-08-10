@@ -45,3 +45,6 @@ _the boilerplate dobe insane redux_
 
   - 
 
+- Can also set globals and imports under index.css
+
+- jsconfig.json doesn't work for vite
