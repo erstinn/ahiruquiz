@@ -1,0 +1,168 @@
+//animations
+
+@mixin grid-defaults {
+  display: grid;
+  justify-content: center;
+  border: 0.1px solid var(--border);
+  border-radius: 15px;
+  background-color: var(--bg_secondary);
+  margin: 3rem 0 0 1rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+
+//todo ====================================== animations ======================================
+//dno if ill use them again hence i put here
+@mixin fade-in-upwards() {
+  @keyframes fade-in-upwards { //`h1` stuff
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+
+    }
+  }
+  animation-name: fade-in-upwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@mixin fade-in-downwards() {
+  @keyframes fade-in-downwards { //`h1` stuff
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  animation-name: fade-in-downwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@mixin fade-in-right() {
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(100%);
+      transition: 0.5s;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+  }
+  animation-name: fade-in-right;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+@mixin stagger() {
+  @keyframes stagger {
+    from {
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-100%);
+      transition: 1s
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+  }
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: stagger;
+}
+
+@mixin blast($selector) {
+  #{$selector}:nth-child(1) {
+    transform: translate(-150%, -20%) rotate(-20deg);
+  }
+  #{$selector}:nth-child(2) {
+    transform: translate(-150%, 10%)rotate(-20deg);
+  }
+  #{$selector}:nth-child(3) {
+    transform: translate(-90%, 10%)  rotate(-20deg);
+  }
+  #{$selector}:nth-child(4) {
+    transform: translateX(-60%) rotate(-5deg);
+  }
+  #{$selector}:nth-child(5) {
+    transform: translate(-30%, -120%)  rotate(-3deg);
+  }
+  #{$selector}:nth-child(6) {
+    transform: translate(10%, 3%) rotate(1deg);
+  }
+  #{$selector}:nth-child(7) {
+    transform: translate(60%, -20%) rotate(3deg);
+  }
+  #{$selector}:nth-child(8) {
+    transform: translate(90%, 50%) rotate(5deg);
+  }
+  #{$selector}:nth-child(9) {
+    transform: translate(120%, -150%) rotate(7deg);
+  }
+  #{$selector}:nth-child(10) {
+    transform: translate(150%, 3%) rotate(9deg);
+  }
+}
+
+@mixin unblast ($selector){
+  #{$selector}:nth-child(1) {
+    transform: translateX(-90%);
+  }
+  #{$selector}:nth-child(2) {
+    transform: translateX(-60%);
+  }
+  #{$selector}:nth-child(3) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(4) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(5) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(6) {
+    transform: translateX(10%);
+  }
+  #{$selector}:nth-child(7) {
+    transform: translateX(-30%);
+  }
+  #{$selector}:nth-child(8) {
+    transform: translate(30%, 3%);
+  }
+  #{$selector}:nth-child(9) {
+    transform: translate(60%, 4%);
+  }
+  #{$selector}:nth-child(10) {
+    transform: translate(90%, 5%);
+  }
+}
+
+//designs
+@mixin tab-header{
+  display: flex;
+  position: relative;
+  color: var(--text_header);
+  margin: 1rem 0 0.5rem 0;
+  max-height: 1rem;
+  text-transform: lowercase;
+  justify-self: center;
+}
+
+
