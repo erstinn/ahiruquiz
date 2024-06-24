@@ -21,14 +21,6 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
 html, body, #root, .app {
   height: 100%;
@@ -78,5 +70,54 @@ p {
 a, a:visited, a:active {
   text-decoration: none;
 }
+
+:root {
+  --bg: #D8D3CF;
+  --card: white;
+  --font: #4F4541;
+  --nav: #F0E3BB;
+  --extra1: #EDDFDC;
+  --extra2: #CAD2C7;
+  --tag1: #C1E9C6;
+  --tag2: #D4B256;
+  --tag3: #EEA9A1;
+  --font-family: "M PLUS Rounded 1c", Arial, sans-serif;
+  --font-size-xs: calc(12px + 0.5vw);
+  --font-size-s: calc(12px + 0.8vw);
+  --font-size-m: calc(10px + 1vw);
+  --font-size-l: calc(9px + 7vw);
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --screen-size-sm: 400px;
+  --screen-size-md: 768px;
+  --screen-size-lg: 1024px;
+  --screen-size-xl: 1280px;
+  --screen-size-xxl: 1920px;
+}
+
+.dark {
+  --bg: #3d435b;
+  --card: #2F343F;
+  --font: #F0E3BB;
+  --nav: #D4B256;
+  --extra1: #8F79A8;
+  --extra2: #afd5ad;
+  --tag1: #286983;
+  --tag2: #EA9D34;
+  --tag3: #C38895;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
 
 /*# sourceMappingURL=global.css.map */

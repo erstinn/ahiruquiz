@@ -12,7 +12,7 @@ import {register } from "./controllers/auth.js"
 // === INIT ROUTES ===
 import authRoutes from "./routes/auth.js";
 import {verifyToken} from "./middleware/auth.js";
-import userRoutes from "./routes/users.js";
+import userRoutes from "./routes/user.js";
 
 
 //  ===CONFIGS===
@@ -50,8 +50,9 @@ const upload = multer({ storage });
 app.post('/auth/register', upload.single('picture'),  register);
 
 // === MOUNT ROUTES ===
-app.use('/auth', authRoutes);
-app.use('/users', userRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/sets', userRoutes);
 
 // === MONGOOSE SETUP ===
 const PORT = process.env.PORT || 5172;

@@ -11,7 +11,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "storybook": "ng run app:storybook",
-    "build-storybook": "ng run app:build-storybook"
+    "build-storybook": "ng run app:build-storybook",
+    "pw": "npx playwright test",
+    "pwui": "npx playwright test --ui"
   },
   "private": true,
   "dependencies": {
@@ -33,7 +35,10 @@
     "@capacitor/status-bar": "6.0.0",
     "@ionic/angular": "^8.0.0",
     "@ionic/pwa-elements": "^3.3.0",
+    "@ngx-env/builder": "^18.0.1",
+    "autoprefixer": "^10.4.19",
     "ionicons": "^7.2.1",
+    "postcss": "^8.4.38",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
@@ -52,6 +57,7 @@
     "@chromatic-com/storybook": "^1.5.0",
     "@compodoc/compodoc": "^1.1.25",
     "@ionic/angular-toolkit": "^11.0.1",
+    "@playwright/test": "^1.44.1",
     "@storybook/addon-docs": "^8.1.8",
     "@storybook/addon-essentials": "^8.1.8",
     "@storybook/addon-interactions": "^8.1.8",
@@ -59,7 +65,9 @@
     "@storybook/angular": "^8.1.8",
     "@storybook/blocks": "^8.1.8",
     "@storybook/test": "^8.1.8",
+    "@storybook/test-runner": "^0.18.2",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^20.14.2",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.57.0",
@@ -75,6 +83,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "storybook": "^8.1.8",
+    "tailwindcss": "^3.4.4",
     "typescript": "~5.4.0"
   },
   "description": "An Ionic project",

@@ -1,10 +1,42 @@
 //this file just showcases css custom variables, other than that, useless
 //notion devtools showed me how to light/dark themes
 
-:root{
+:root {
+  --bg: #D8D3CF;
+  --card: white;
+  --font: #4F4541;
+  --nav: #F0E3BB;
+  --extra1: #EDDFDC;
+  --extra2: #CAD2C7;
+  --tag1: #C1E9C6;
+  --tag2: #D4B256;
+  --tag3: #EEA9A1;
 
+  --font-family: 'M PLUS Rounded 1c', Arial, sans-serif;
+  --font-size-xs: calc(12px + 0.5vw);
+  --font-size-s: calc(12px + 0.8vw);
+  --font-size-m: calc(10px + 1vw);
+  --font-size-l: calc(9px + 7vw);
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --screen-size-sm: 400px;
+  --screen-size-md: 768px;
+  --screen-size-lg: 1024px;
+  --screen-size-xl: 1280px;
+  --screen-size-xxl: 1920px;
 }
 
-.dark{ //based on arc dark theme
-
+.dark {
+  --bg: #3d435b;
+  --card: #2F343F;
+  --font: #F0E3BB;
+  --nav: #D4B256;
+  --extra1: #8F79A8;
+  --extra2: #afd5ad;
+  --tag1: #286983;
+  --tag2: #EA9D34;
+  --tag3: #C38895;
 }
+
