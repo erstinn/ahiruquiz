@@ -12,8 +12,10 @@
       <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
-  <app-footer></app-footer>
-
+  <app-footer [memberInfo]="memberInfo"></app-footer>
+  <ion-button aria-label="Favorite">
+    <ion-icon name="star"></ion-icon>
+  </ion-button>
   <div id="container">
 
   </div>

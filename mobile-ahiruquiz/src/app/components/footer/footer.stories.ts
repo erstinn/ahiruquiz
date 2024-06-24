@@ -11,15 +11,12 @@ const meta: Meta<FooterComponent> = {
   parameters: {
     layout: 'fullscreen',
   },
-  args: {
-    onLogin: fn(),
-    onLogout: fn(),
-    onCreateAccount: fn(),
-  },
+  argTypes: { onClick: { action: 'clicked' } },
   decorators: [
     applicationConfig({
       providers: [importProvidersFrom([IonicModule.forRoot()])],
     }),
+
     componentWrapperDecorator((story) => `<ion-app>${story}</ion-app>`),
   ],
 };
@@ -34,3 +31,31 @@ export const LoggedIn: Story = {
 }
 
 export const LoggedOut: Story = {};
+
+export const Primary: Story = {
+  args: {
+    memberInfo: {
+      name: 'Aaron Saunders',
+      title: 'CEO',
+      bio: 'Amazing Experience',
+      companyName: 'Clearly Innovative Inc',
+      linkedIn: 'Clearly Innovative Inc',
+      twitter: 'https://twitter.com/aaronksaunders',
+      website: 'www.clearlyinnovative.com',
+    },
+  },
+};
+
+
+export const MissingSocial: Story = {
+  args: {
+    memberInfo: {
+      name: 'Aaron Saunders',
+      title: 'CEO',
+      companyName: 'Clearly Innovative Inc',
+      bio: 'No news',
+      website: 'www.clearlyinnovative.com',
+    },
+  },
+};
+
